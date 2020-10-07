@@ -10,16 +10,16 @@
         android:id="@+id/button_toast"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
         android:background="@color/colorPrimary"
+        android:onClick="showToast"
         android:text="@string/toast_text"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="showToast"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -40,22 +40,20 @@
 
     <TextView
         android:id="@+id/show_count"
-        android:layout_width="406dp"
-        android:layout_height="629dp"
+        android:layout_width="401dp"
+        android:layout_height="685dp"
+        android:layout_margin="8dp"
         android:layout_marginStart="174dp"
-        android:layout_marginTop="307dp"
         android:layout_marginEnd="179dp"
-        android:layout_marginBottom="307dp"
-        android:text="@string/count_Dtext"
+        android:background="@color/yellow"
         android:gravity="center"
+        android:text="@string/count_Dtext"
+        android:textColor="@color/colorPrimary"
         android:textSize="160sp"
         android:textStyle="bold"
-        android:layout_margin="8dp"
-        android:background="@color/yellow"
-        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/button_count"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_toast"
-        app:layout_constraintVertical_bias="0.495" />
+        app:layout_constraintTop_toBottomOf="@+id/button_toast" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
